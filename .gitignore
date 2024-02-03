@@ -1,0 +1,29 @@
+# CMake
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+src/pico-sdk/*
+
+# Build residues
+ELF2UF2Build-*
+config_autogen.h
+version.h
+bs2_*
+*.bin
+*.dis
+*.elf
+*.elf.map
+*.hex
+*.uf2
+elf2uf2
+
+# VSCode added stuff (idk)
+src/pioasm/pioasm

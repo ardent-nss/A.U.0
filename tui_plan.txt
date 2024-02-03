@@ -1,0 +1,26 @@
+ A.U.0                                 (c) 2024 Ardent - MIT License | v1.0.0.0 
+
+  {baud} baud             | Realtime RX: 921600 bps
+  {bits} data bits        |          TX: 921600 bps
+  {bits} stop bits        |    Total RX: 18446744073709551615 bits
+  no parity (unsupported) |          TX: 18446744073709551615 bits
+
+  ----- RX graph <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< (RX bits/sec)  <- animated based on bits being exchanged
+   921600 .
+   768000 .
+   614400 .
+   460800 :
+   307200 |
+   153600 |
+          1   5   10   15   20   25   30   35   40   45   50   55   60
+
+  ----- TX graph >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> (TX bits/sec)  <- animated based on bits being exchanged
+   921600
+   768000
+   614400
+   460800
+   307200
+   153600
+          1   5   10   15   20   25   30   35   40   45   50   55   60
+
+ https://github.com/ardent-nss/A.U.0                         Demand perfection. 
