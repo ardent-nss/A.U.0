@@ -4,7 +4,7 @@
 
 mount_location=/mnt/pico # where the flash partition shall be mounted
                          # (no trailing slash, please)
-binary=a0_bl.uf2 # the UF2 binary to send to the Pico
+binary=au0.uf2 # the UF2 binary to send to the Pico
 
 before=$(lsblk -o NAME) # get existing devices
 read -n 1 -s -r -p "Plug the Pico in BOOTSEL mode. Press Enter when finished."
@@ -19,3 +19,4 @@ mount /dev/${dev_name} ${mount_location} # mount the Pico's flash partition
 cp $binary ${mount_location} # copy over the UF2 binary
 
 printf "\nDeployed.\n" # It works on my machine™, so no error handling
+		       # (you should see errors printed by other programs, if any)

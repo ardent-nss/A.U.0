@@ -6,7 +6,7 @@ set(CMAKE_C_COMPILER "arm-none-eabi-gcc")
 set(CMAKE_CXX_COMPILER "arm-none-eabi-g++")
 set(CMAKE_ASM_COMPILER "arm-none-eabi-gcc")
 
-project(upp C CXX ASM)
+project(au0 C CXX ASM)
 
 set(CMAKE_C_STANDARD 17)
 set(CMAKE_CXX_STANDARD 20)
@@ -18,13 +18,13 @@ pico_sdk_init()
 
 include_directories(${CMAKE_SOURCE_DIR})
 
-add_executable(upp
+add_executable(au0
   main.cpp
 )
 
-pico_enable_stdio_uart(upp 0) # both UARTS are used by the program
-pico_enable_stdio_usb(upp 1)  # for the built-in traffic monitor
+pico_enable_stdio_uart(au0 0) # both UARTS are used by the program for the built-in traffic monitor
+pico_enable_stdio_usb(au0 1)  #
 
-pico_add_extra_outputs(upp)
+pico_add_extra_outputs(au0)
 
-target_link_libraries(upp pico_stdlib pico_multicore hardware_gpio hardware_uart)
+target_link_libraries(au0 pico_stdlib pico_multicore hardware_gpio hardware_uart)

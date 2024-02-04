@@ -14,22 +14,22 @@
 2. UART1 connected to "machine B"
 3. Baud rate set via first 4 switches in DIP
    1. Decimal representation of baud rates:
-      1. 110
-      2. 150
-      3. 300
-      4. 1200
-      5. 2400
-      6. 4800
-      7. 9600
-      8. 19200
-      9. 38400
-      10. 57600
-      11. 76800
-      12. 115200
-      13. 230400
-      14. 460800
-      15. 576000
-      16. 921600
+      1. 300
+      2. 1200
+      3. 2400
+      4. 4800
+      5. 9600
+      6. 19200
+      7. 38400
+      8. 57600
+      9. 76800
+      10. 115200
+      11. 230400
+      12. 460800
+      13. 576000
+      14. 921600
+      15. 2000000
+      16. 3000000
 4. Data bits set by 5th and 6th switches in DIP
    1. Decimal representation of data bits:
       1. 5
