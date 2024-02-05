@@ -6,6 +6,7 @@
 \******************************************************************************/
 
 #include <stdio.h>
+#include <iostream>
 #include <stdbool.h>
 
 #include "pico/stdlib.h"
@@ -57,8 +58,7 @@
 int main() {
   set_sys_clock_khz(250000, true); // need for speed, literally
   stdio_init_all();
-  //sleep_ms(7000);
-  printf("\n"); // have some common decency, folks.
+  printf("\n\n"); // have some common decency, folks.
 
   gpio_set_function(UART0_RX, GPIO_FUNC_UART);
   gpio_set_function(UART0_TX, GPIO_FUNC_UART);
@@ -86,57 +86,6 @@ int main() {
     gpio_put(LED_TX,0);
     sleep_ms(500);
   }
-
-  //gpio_put(LED_RX,1);
-
-  int __unused attempted_baudrate_300 = uart_init(UART0_ID,300);
-  printf("UART baudrate set to %d (target was 300)\n", attempted_baudrate_300);
-  sleep_ms(20);
-  int __unused attempted_baudrate_1200 = uart_init(UART0_ID,1200);
-  printf("UART baudrate set to %d (target was 1200)\n", attempted_baudrate_1200);
-  sleep_ms(20);
-  int __unused attempted_baudrate_2400 = uart_init(UART0_ID,2400);
-  printf("UART baudrate set to %d (target was 2400)\n", attempted_baudrate_2400);
-  sleep_ms(20);
-  int __unused attempted_baudrate_4800 = uart_init(UART0_ID,4800);
-  printf("UART baudrate set to %d (target was 4800)\n", attempted_baudrate_4800);
-  sleep_ms(20);
-  int __unused attempted_baudrate_9600 = uart_init(UART0_ID,9600);
-  printf("UART baudrate set to %d (target was 9600)\n", attempted_baudrate_9600);
-  sleep_ms(20);
-  int __unused attempted_baudrate_19200 = uart_init(UART0_ID,19200);
-  printf("UART baudrate set to %d (target was 19200)\n", attempted_baudrate_19200);
-  sleep_ms(20);
-  int __unused attempted_baudrate_38400 = uart_init(UART0_ID,38400);
-  printf("UART baudrate set to %d (target was 38400)\n", attempted_baudrate_38400);
-  sleep_ms(20);
-  int __unused attempted_baudrate_57600 = uart_init(UART0_ID,57600);
-  printf("UART baudrate set to %d (target was 57600)\n", attempted_baudrate_57600);
-  sleep_ms(20);
-  int __unused attempted_baudrate_76800 = uart_init(UART0_ID,76800);
-  printf("UART baudrate set to %d (target was 76800)\n", attempted_baudrate_76800);
-  sleep_ms(20);
-  int __unused attempted_baudrate_115200 = uart_init(UART0_ID,115200);
-  printf("UART baudrate set to %d (target was 115200)\n", attempted_baudrate_115200);
-  sleep_ms(20);
-  int __unused attempted_baudrate_230400 = uart_init(UART0_ID,230400);
-  printf("UART baudrate set to %d (target was 230400)\n", attempted_baudrate_230400);
-  sleep_ms(20);
-  int __unused attempted_baudrate_460800 = uart_init(UART0_ID,460800);
-  printf("UART baudrate set to %d (target was 460800)\n", attempted_baudrate_460800);
-  sleep_ms(20);
-  int __unused attempted_baudrate_576000 = uart_init(UART0_ID,576000);
-  printf("UART baudrate set to %d (target was 576000)\n", attempted_baudrate_576000);
-  sleep_ms(20);
-  int __unused attempted_baudrate_921600 = uart_init(UART0_ID,921600);
-  printf("UART baudrate set to %d (target was 921600)\n", attempted_baudrate_921600);
-  sleep_ms(20);
-  int __unused attempted_baudrate_2000000 = uart_init(UART0_ID,2000000);
-  printf("UART baudrate set to %d (target was 2000000)\n", attempted_baudrate_2000000);
-  sleep_ms(20);
-  int __unused attempted_baudrate_3000000 = uart_init(UART0_ID,3000000);
-  printf("UART baudrate set to %d (target was 3000000)\n", attempted_baudrate_3000000);
-  sleep_ms(20);
 
   return 0;
 }

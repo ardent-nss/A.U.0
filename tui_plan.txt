@@ -1,26 +1,54 @@
- A.U.0                                 (c) 2024 Ardent - MIT License | v1.0.0.0 
+ A.U.0                                 (c) 2024 Ardent - MIT License | vW.X.Y.Z 
 
-  {baud} baud             | Realtime RX: 921600 bps
-  {bits} data bits        |          TX: 921600 bps
-  {bits} stop bits        |    Total RX: 18446744073709551615 bits
-  no parity (unsupported) |          TX: 18446744073709551615 bits
+  3000000 baud    | Realtime RX: 3000000 bps            [ Press c for config ]
+  8 data bits     |          TX: 3000000 bps
+  1 stop bit(s)   |    Total RX: 18446744073709551615 bits                      [Totals represent up to ~14805 petabytes each]
+  no parity       |          TX: 18446744073709551615 bits                      Underline certain numbers to indicate separators for b/Kb/Mb/Gb/etc
 
-  ----- RX graph <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< (RX bits/sec)  <- animated based on bits being exchanged
-   921600 .
-   768000 .
-   614400 .
-   460800 :
-   307200 |
-   153600 |
+ ------ RX graph <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< (RX bits/sec)  <- animated based on bits being exchanged
+  3000000 .
+  2500000 .
+  2000000 .
+  1500000 :
+  1000000 |
+   500000 |
           1   5   10   15   20   25   30   35   40   45   50   55   60
 
-  ----- TX graph >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> (TX bits/sec)  <- animated based on bits being exchanged
-   921600
-   768000
-   614400
-   460800
-   307200
-   153600
+ ------ TX graph >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> (TX bits/sec)  <- animated based on bits being exchanged
+  3000000 .
+  2500000 .
+  2000000 .
+  1500000 :
+  1000000 |
+   500000 |
           1   5   10   15   20   25   30   35   40   45   50   55   60
 
- https://github.com/ardent-nss/A.U.0                         Demand perfection. 
+ Uptime: 1875d 23h 43m 39s [tot. 18446744073709]             Demand perfection. END OF MAIN SCREEN
+--------------------------------------------------------------------------------BEGIN CONFIG SCREEN
+ A.U.0                                 (c) 2024 Ardent - MIT License | vW.X.Y.Z 
+
+  /*** Configuration ********************************************************\
+   * UART Settings                                                          *
+   *   - Baud rate: [ 3000000 ]                                             *
+   *   - Data bits: [ 8 ]                                                   *
+   *   - Stop bits: [ 2 ]                                                   *
+   *   - Parity: none / even / odd                                          *
+   *   - RTS: disabled / enabled                                            *
+   *   - CTS: disabled / enabled                                            *
+   *                                                                        *
+   * GPIO Settings                                                          *
+   *   - Slew rate: slow / fast                                             *
+   *   - Drive strength: 2mA / 4mA / 8mA / 12mA                             *
+   *                                                                        *
+   * Text User Interface                                                    *
+   *   - Bits / Bytes                                                       *   <- different options highlighted, moved with arrow keys
+   *   - Enable Prefixes (Kb,Mb,Gb,...) / Disable Prefixes                  *
+   * ---------------------------------------------------------------------- *
+   * > Save (and apply)                                                     *
+   * > Set as default (write this config to flash)                          *
+  \**************************************************************************/
+
+
+
+ Uptime: 1875d 23h 43m 39s [tot. 18446744073709]             Demand perfection. 
+--------------------------------------------------------------------------------END OF CONFIG SCREEN
